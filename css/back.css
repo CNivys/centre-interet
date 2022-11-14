@@ -1,0 +1,343 @@
+.bg{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-image: url('../img/fond.jpg');
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+/** Bouton capture**/
+.cap{
+    background-color: #55433C;
+    border-width: 3px;
+    padding-bottom: 15px;
+    margin-left: 380px;
+    height: 35px;
+    width: 80px;
+}
+
+/** Images **/
+img{
+    z-index: 1 ;
+    width: 80px;
+    margin-right: 10px;
+}
+
+.fr{
+    width: 80%;
+    margin-left: 10px
+}
+
+/** flash**/
+.enc {
+    margin-top: 5%;
+    margin-left: 47%;
+	border-bottom: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+
+}
+
+/** appareil photo**/ 
+
+.ap{
+    background-color: #732800;
+    background-image: url("https://www.transparenttextures.com/patterns/leather.png");
+    width: 75%;
+    height: 500px;
+    margin-left: 13%;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 1);
+}
+
+.cerclerec{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border-style: groove;
+    border-color: black;
+    border-width: 5px;
+    background: rgb(194,75,57);
+    background: linear-gradient(180deg, rgba(194,75,57,1) 0%, rgba(194,75,57,1) 20%, rgba(0,0,0,1) 25%, rgba(194,75,57,1) 30%, rgba(194,75,57,1) 45%, rgba(0,0,0,1) 50%, rgba(194,75,57,1) 55%, rgba(194,75,57,1) 70%, rgba(0,0,0,1) 75%, rgba(194,75,57,1) 80%, rgba(194,75,57,1) 100%);;
+    margin-top: 20px;
+    margin-left: 15px;
+    position: absolute;
+    z-index: 2;
+    transition-duration: 0.7s;
+}
+/**
+.cerclerec:hover{
+    transform: rotate(90deg);
+    outline: none;
+}
+
+.cerclerec:hover + .menu{
+    visibility: visible;
+    opacity: 1;
+}
+
+menu:hover{
+    visibility: visible;
+    opacity: 1;
+}
+**/
+
+/** menu glissant **/
+/**
+.menu{
+    border-color: #b3ab8b;
+    border-style: solid;
+    border-width: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in;
+    position: absolute;
+    margin-bottom: 0px;
+    margin-left: 70px;
+    margin-top: 100px;
+    width: 150px;
+    height: 300px;
+    background-color: yellow;
+**/
+
+nav{
+    position: sticky;
+}
+
+nav ul{
+    list-style-type: none;
+    position: absolute;
+}
+
+nav ul li{
+    width: 100%;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear:both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 0px 0px;
+}
+
+nav a:hover{
+    transform: rotate(270deg);
+    color: #B53F31;
+}
+
+.sous{
+    margin-left: 84px;
+    margin-bottom: 10px;
+    display: none;
+    box-shadow: 0px 1px 2px #ccc;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover{
+    transform: rotate(90deg);
+}
+
+nav > ul li:hover .sous{
+    display: block;
+    transform: rotate(270deg);
+}
+
+.sous li{
+    float: none;
+    width: 100%;
+}
+
+.sous a{
+    padding: 2px;
+    border-bottom: none;
+}
+
+.sous:hover > a{
+    transform: rotate(0deg);
+}
+
+.lii:hover > a{
+    transform: rotate(270deg);
+    color: #B53F31;
+}
+
+/** Texte **/
+
+.lap{
+    font-weight: bold;
+    margin-left: 32%;
+    position: absolute;
+    color: #c96c44;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+}
+
+
+/** back **/
+
+
+/** écran **/
+
+.ecran{
+    position: absolute;
+    background-color: rgba(16, 16, 16, 0.718);
+    margin-top: 5%;
+    margin-left: 12%;
+}
+
+.overlay {
+    position: relative;
+    width: 880px;
+    height: 400px;
+    margin-left: 1%;
+
+    --border-style: 2px solid red;
+    --border-space: 20px;
+}
+
+.overlay-element {
+    position: absolute;
+    width: 150px; 
+    height: 100px;  
+}
+
+.overlay .top-left {
+    border-left: var(--border-style);
+    border-top: var(--border-style);
+    top: var(--border-space);
+}
+
+.overlay .top-right {
+    border-right: var(--border-style);
+    border-top: var(--border-style);
+    top: var(--border-space);
+    right: var(--border-space);
+}
+
+.overlay .bottom-left {
+    border-left: var(--border-style);
+    border-bottom: var(--border-style);
+    bottom: var(--border-space);
+}
+
+.overlay .bottom-right {
+    border-right: var(--border-style);
+    border-bottom: var(--border-style);
+    bottom: var(--border-space);
+    right: var(--border-space);
+}
+
+.overlay-helper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.base{
+    position: absolute;
+    width: 98%;
+    margin-top: 2%;
+    height: 91%;
+}
+
+.test{
+    background-color: rgba(131,86,86,0.6);
+    width: 98%;
+    height: 13%;    
+    margin-left: 0.85%;
+    margin-top: 1.5%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.test > a{
+    transition-duration: 0.5s;
+    font-size: 2.5em;
+    border-style: solid;
+    border-color:#2e2520;
+    border-radius: 6px;
+    color:rgb(113, 102, 72,.8);
+    font-weight: bold;
+    background:conic-gradient(#e6e9bf, #d2b5aa, #cbaea3, #d4b5ab,
+    #e6e9bf, #d2b5aa, #cbaea3, #d4b5ab,
+    #e6e9bf, #d2b5aa, #cbaea3, #d4b5ab,
+    #e6e9bf, #d2b5aa, #cbaea3, #d4b5ab);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.test > a:hover{
+    background-color: red;
+    transform: scale(108%);
+}
+
+.princ{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 95%;
+    height: 80%;
+    margin-left: 2%;
+    margin-top: 0.8%;
+    border-radius: 20px;
+}
+
+.princ > p{
+    transition-duration: 0.5s;
+}
+
+.appex{
+    display: flex;
+}
+
+.app{
+    border-color: rgba(0,0,0,.6);
+    border-style: solid;
+    border-radius: 10px;
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 20%;
+    transition-duration: 0.5s;
+    background-color: rgba(255,255,255,.1);
+}
+
+.tapp{
+    margin-right: 2%;
+    margin-left: 6%;
+    border-style: solid;
+    z-index: 1;
+    transition-duration: 0.5;
+}
+
+.tapp:hover{
+    background-color: 	rgb(193, 154, 107,.8);
+    transform: scale(1.3);
+}
+
+.app:hover{
+    background-color: rgba(255,255,255,.3);
+    transform: scale(1.4);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
