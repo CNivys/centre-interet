@@ -328,7 +328,8 @@ nav > ul li:hover .sous{
     margin-left: 6%;
     border-style: solid;
     z-index: 1;
-    transition-duration: 0.5;
+    transition-duration: 0.5s;
+    padding-left: 3%;
 }
 
 .tapp:hover{
@@ -340,4 +341,24 @@ nav > ul li:hover .sous{
     background-color: rgba(255,255,255,.3);
     transform: scale(1.4);
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.hist{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 95%;
+    height: 80%;
+    margin-left: 2%;
+    margin-top: 0.8%;
+    border-radius: 20px;   
+}
+
+.time:hover{
+    transform: scale(1.4);
+}
+
+.time{
+    transition-duration: 0.5s;
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
 }
