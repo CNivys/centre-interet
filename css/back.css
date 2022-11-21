@@ -401,10 +401,58 @@ nav > ul li:hover .sous{
     width: 12%;
 }
 
-.hist > :nth-child(-n+6){
+.hist > :nth-child(-n+12){
     transition-duration: 0.5s;
 }
 
-.hist > :nth-child(-n+6):hover{
+.hist > :nth-child(-n+12):hover{
     transform: scale(1.6);
+}
+
+.hist > :nth-child(2){
+    position: absolute;
+    scale: 1;
+    font-weight: bold;
+    margin-left: 13%;
+    margin-top: 15%;
+}
+
+.hist > :nth-child(4){
+    position: absolute;
+    scale: 0.9;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-left: 18%;
+}
+
+.hist > :nth-child(6){
+    position: absolute;
+    scale: 0.9;
+    font-weight: bold;
+    margin-top: 15%;
+    margin-left: 30%;
+}
+
+.hist > :nth-child(8){
+    position: absolute;
+    scale: 0.9;
+    font-weight: bold;
+    margin-top: 11%;
+    margin-left: 37%;
+}
+
+.hist > :nth-child(10){
+    position: absolute;
+    scale: 0.9;
+    font-weight: bold;
+    margin-top: 15%;
+    margin-left: 43%;
+}
+
+.hist > :nth-child(12){
+    position: absolute;
+    scale: 0.9;
+    font-weight: bold;
+    margin-top: 11%;
+    margin-left: 51%;
 }
