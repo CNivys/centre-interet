@@ -351,6 +351,15 @@ nav > ul li:hover .sous{
     margin-top: 0.8%;
     border-radius: 20px;   
 }
+
+.art{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 95%;
+    height: 80%;
+    margin-left: 2%;
+    margin-top: 0.8%;
+    border-radius: 20px;   
+}
 /**
 .time:hover{
     transform: scale(1.4);
