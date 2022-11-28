@@ -195,7 +195,8 @@ nav > ul li:hover .sous{
 }
 
 .test > p{
-    font-size: 1.4em;
+    margin-top: 0.8%;
+    font-size: 2em;
     color: #c96c44;
     text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
 }
@@ -637,7 +638,7 @@ nav > ul li:hover .sous{
 
 @keyframes display {
     0% {
-      transform: translateX(200px);
+      transform: translateX(100px);
       opacity: 0;
     }
     10% {
@@ -649,23 +650,24 @@ nav > ul li:hover .sous{
       opacity: 1;
     }
     30% {
-      transform: translateX(-200px);
+      transform: translateX(-100px);
       opacity: 0;
     }
     100% {
-      transform: translateX(-200px);
+      transform: translateX(-100px);
       opacity: 0;
     }
 }
 
 .images {
+    background-color: rgba(255,255,255,0.5);
     height: 0%;
-    margin-left: 22%;
+    margin-left: 31%;
     border: solid;
     position: absolute;
-    height: 50%;
-    margin-top: 5%;
-    width: 50%;
+    height: 70%;
+    margin-top: 2%;
+    width: 30%;
 
 }
 
@@ -673,7 +675,7 @@ nav > ul li:hover .sous{
     margin-top: 10%;
     width: 30%;
     position: absolute;
-    margin-left: 40%;
+    margin-left: 35%;
     opacity: 0;
     animation: display 10s infinite;
 }
